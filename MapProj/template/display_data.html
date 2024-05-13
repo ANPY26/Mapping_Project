@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <title>Explorer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+        </style>
+        </head>
+</head>
+<body>
+    <h2>Explore</h2>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+        <thead>
+            <tr>
+                <th><b>VERSION ID</b></th>
+                <th>MAPPING DESCRIPTION</th>
+                <th>USER ID</th>
+                <th>DATE</th>
+                <!-- Add more table headers for additional fields -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in data %}
+                <tr>
+                    <td>{{ item.version_id }}</td>
+                    <td>{{ item.mapping_desc }}</td>
+                    <td>{{ item.user_id }}</td>
+                    <td>{{ item.date_id }}</td>
+                    <!-- Add more table cells for additional fields -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
