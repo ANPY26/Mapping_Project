@@ -1,0 +1,1 @@
+select divide(1,0) from dummy where 1 = 1
